@@ -19,6 +19,9 @@ Before starting, ensure that you have the following installed on your system:
 ### 01-single/
 - **Compiling and Running a Simple Java Program**: Learn the basics of compiling a `.java` file into a `.class` file using `javac` and executing it with `java`, including handling command-line arguments.
 
+### 02-packages-and-jars/
+- **Organizing Code with Packages and JARs**: Learn how to organize your Java code into packages, compile multiple `.java` files, understand the class path, and bundle your application into a JAR file for distribution and execution.
+
 ## Getting Started
 1. Clone this repository to your local machine.
    ```bash
