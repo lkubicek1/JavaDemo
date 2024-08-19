@@ -68,7 +68,8 @@ This is a simple utility class that resides inside the `src/com/example/utils/` 
 #### 5. **Creating a JAR File**
    - Create a JAR file that contains all your compiled classes and specify the entry point:
      ```bash
-     jar cfe myapp.jar com.example.Main -C out/ .
+     mkdir -p target
+     jar cfe target/myapp.jar com.example.Main -C out/ .
      ```
 
 #### 6. **Running the JAR File**
@@ -85,6 +86,28 @@ This is a simple utility class that resides inside the `src/com/example/utils/` 
      java -Denv=dev -jar myapp.jar John
      ```
      Notice the change in environment.  Using the `-D` flag allows you to pass system properties to the JVM.
+
+#### 7. **Viewing the Contents of a JAR File**
+   - A JAR file is essentially a compressed archive, similar to a ZIP file, and you can view its contents using the `jar` command or other archive tools.
+   - To list the contents of the JAR file, use the following command:
+     ```bash
+     jar tf myapp.jar
+     ```
+   - This will display the files and directories inside the JAR, which should include your `Main.class`, `GreetingUtil.class`, and the `META-INF` directory containing the `MANIFEST.MF` file.
+
+   - Example output:
+     ```
+     META-INF/
+     META-INF/MANIFEST.MF
+     com/example/Main.class
+     com/example/utils/GreetingUtil.class
+     ```
+
+   - You can also extract the contents of the JAR file to inspect the files directly:
+     ```bash
+     jar xf myapp.jar
+     ```
+   - This command will extract the contents into the current directory, maintaining the directory structure of the packages.
 
 ### 4. **Exercises**
 
