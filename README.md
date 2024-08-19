@@ -12,6 +12,13 @@ Before starting, ensure that you have the following installed on your system:
     java -version
     javac -version
     ```
+
+- **Apache Maven**: Maven is a build automation tool used primarily for Java projects. You can download Maven from the [official website](https://maven.apache.org/download.cgi) or install it via a package manager like `brew` on macOS or `apt` on Linux.
+  - Verify your installation by running:
+    ```bash
+    mvn -version
+    ```
+
 - **A Text Editor or IDE**: While a basic text editor like `VS Code` is sufficient, you can also use more feature-rich IDEs like `IntelliJ IDEA` or `Eclipse`.
 
 ## Modules
@@ -21,6 +28,12 @@ Before starting, ensure that you have the following installed on your system:
 
 ### 02-packages-and-jars/
 - **Organizing Code with Packages and JARs**: Learn how to organize your Java code into packages, compile multiple `.java` files, understand the class path, and bundle your application into a JAR file for distribution and execution.
+
+### 03-maven/
+- **Building Java Projects with Maven**: Learn how to use Maven to manage your Java projects, including compiling code, managing dependencies, and building an executable JAR file with all dependencies packaged inside.
+
+### 04-spring/
+- **Introduction to Spring Boot**: Get started with the Spring Boot framework by creating a simple REST API. Learn about component scanning, the application context, singleton beans, Spring lifecycle hooks like `@PostConstruct` and `@PreDestroy`, and how to inspect the beans managed by Spring.
 
 ## Getting Started
 1. Clone this repository to your local machine.
