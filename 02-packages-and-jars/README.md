@@ -80,6 +80,11 @@ This is a simple utility class that resides inside the `src/com/example/utils/` 
      ```bash
      java -jar myapp.jar John
      ```
+   - Bonus: Java System Properties:
+     ```bash
+     java -Denv=dev -jar myapp.jar John
+     ```
+     Notice the change in environment.  Using the `-D` flag allows you to pass system properties to the JVM.
 
 ### 4. **Exercises**
 
